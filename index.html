@@ -150,22 +150,6 @@
             border-color: #8b3a2a;
         }
 
-        /* Estilo para o vídeo do Instagram no lugar do avatar */
-        .video-avatar {
-            width: 100%;
-            height: auto;
-            border-radius: 50%;
-            overflow: hidden;
-            margin-bottom: 0.5rem;
-        }
-        
-        .video-avatar iframe {
-            width: 100%;
-            height: 200px;
-            border-radius: 20px;
-            border: none;
-        }
-
         .nome {
             font-size: 1.8rem;
             font-weight: 800;
@@ -406,9 +390,6 @@
             .kda {
                 font-size: 1.5rem;
             }
-            .video-avatar iframe {
-                height: 180px;
-            }
         }
 
         .tag-humilha {
@@ -460,10 +441,10 @@
             <div style="font-size:0.9rem; text-align:center">Round final: 13-9 na primeira / 14-14 no segundo?<br> <strong>MAS EU GANHEI O SET 12-7 NO GERAL</strong></div>
         </div>
 
-        <!-- CARD DO FIGAS - HUMILHADO COM VÍDEO DO INSTAGRAM -->
+        <!-- CARD DO FIGAS - PATO HUMILHADO -->
         <div class="card-derrota">
-            <div class="video-avatar">
-                <iframe src="https://www.instagram.com/reel/DAeh4K5SNi0/embed" frameborder="0" allowfullscreen></iframe>
+            <div class="avatar avatar-figas">
+                <img id="fotoFigas" src="https://i.pinimg.com/564x/8b/16/7e/8b167e6f3a5b7c9d4e1a2f3c4b5d6e7f.jpg" alt="FIGAS o pato" style="width:100%; height:100%; object-fit:cover;" onerror="this.src='https://placehold.co/300x300/4a2a2a/ffaa66?text=🦆+FIGAS+PATO+🦆'">
             </div>
             <div class="nome nome-humilhado">🦆 FIGAS (MEU PATO) 🦆</div>
             <div class="stats">
@@ -477,7 +458,7 @@
         </div>
     </div>
 
-    <!-- SEÇÃO DAS DUAS ÚLTIMAS PARTIDAS SEGUIDAS DANDO 12 a 7 (HISTÓRICO VERIFICADO) -->
+    <!-- SEÇÃO DAS DUAS ÚLTIMAS PARTIDAS SEGUIDAS DANDO 12 a 7 -->
     <div class="partidas-sequencia">
         <div class="titulo-destaque">
             ⚔️ DUAS ÚLTIMAS PARTIDAS SEGUIDAS ⚔️
@@ -487,14 +468,14 @@
             <div class="partida-card">
                 <div>🎮 PARTIDA 1 • ASCENT</div>
                 <div class="placar-grande"><span class="meu">12</span> : <span class="ele">7</span></div>
-                <div>EU: 31/20/9 | FIGAS: 21/25/3</div>
+                <div>EU: 31/20/9 | FIGAS: 27/20/4</div>
                 <div class="data-sim">🔥 Vitória com 13 rodadas fechadas - humilhação em dobro</div>
                 <div style="margin-top:6px;">MVP: EU (sem discussão)</div>
             </div>
             <div class="partida-card">
                 <div>🎮 PARTIDA 2 • BIND</div>
                 <div class="placar-grande"><span class="meu">12</span> : <span class="ele">7</span></div>
-                <div>EU: 34/22/7 | FIGAS: 24/27/6</div>
+                <div>EU: 34/22/7 | FIGAS: 27/20/4</div>
                 <div class="data-sim">💀 FIGAS tentou mas só serviu de alvo 💀</div>
                 <div style="margin-top:6px;">MVP: EU novamente (perfeito)</div>
             </div>
@@ -504,7 +485,7 @@
         </div>
     </div>
 
-    <!-- FOTO DA VITÓRIA (print real/simbólico mostrando as duas últimas partidas e placar) -->
+    <!-- FOTO DA VITÓRIA -->
     <div class="foto-vitoria-area">
         <div class="foto-vitoria-frame">
             <img id="winScreenshot" src="https://via.placeholder.com/800x400/0e1a2a/ffaa55?text=VITORIA+12-7+SEGUIDAS+CONTRA+FIGAS" alt="print da vitoria valorant 12x7">
@@ -524,21 +505,21 @@
         <div class="sabor-mvp">
             ⭐ FIGAS FICOU NO SABOR MVP ⭐
         </div>
-        <p style="margin-top: 16px; font-size: 1.1rem;"><strong>FIGAS, pode até ter sentido o gostinho do MVP em algum momento, mas na hora do vamos ver, quem carregou fui EU. 12x7 na sua cara, duas vezes seguidas. Aposta liquidada, humilhação registrada pra eternidade.</strong></p>
+        <p style="margin-top: 16px; font-size: 1.1rem;"><strong>Meu PATO, pode até ter sentido o SABOR MVP em algum momento, depois perdeu todas seguidas.</strong></p>
         <div style="margin-top: 1rem;">👑 Assinado: O MVP que te destruiu 👑</div>
     </div>
 
     <!-- detalhe extra com a tabela de estatísticas -->
     <div style="background: #01020be0; border-radius: 2rem; padding: 1.2rem; margin: 1rem 0; border-left: 8px solid #ff4d2e;">
         <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem;">
-            <div><strong>📊 MEU DESEMPENHO (últimos confrontos)</strong><br>⭐ Pontuação: 9.297<br>⭐ K/D/A: 31/26/5 (MVP +21 rating)<br>⭐ Resultado: VITÓRIA + EMPATE? NÃO, SÓ VITÓRIA NA SÉRIE!</div>
+            <div><strong>📊 MEU DESEMPENHO (últimos confrontos)</strong><br>⭐ Pontuação: 9.297<br>⭐ K/D/A: 31/26/5 (MVP +21 rating)<br>⭐ Resultado: VITÓRIA NA SÉRIE!</div>
             <div><strong>📉 DESEMPENHO DO FIGAS (MEU PATO)</strong><br>💩 Pontuação: 7.892<br>💩 K/D/A: 27/20/4<br>💩 Resultado: Derrota<br>💩 FICOU NO SABOR MVP</div>
         </div>
     </div>
 
     <!-- FOOTER -->
     <div class="footer-ironia">
-        <p>⭐ Site produzido para registrar a MAIOR QUE O FIGAS É O MEU PATO ⭐<br>
+        <p>⭐ Site produzido para registrar a QUE O FIGAS É O MEU PATO ⭐<br>
         Eu (O dono) x FIGAS (meu pato) — Duas partidas seguidas com o mesmo placar 12-7, prova que ele é meu pato.<br>
         🎯 APOSTA VENCIDA COM SOBRA. 🎯</p>
         <p style="margin-top: 1rem;">👉 <strong>#12a7 #FIGASmeuPato #EuSouOMVP #FicouNoSaborMVP</strong> 👈</p>
@@ -581,7 +562,7 @@
         ctx.fillText('7', 180, 240);
         ctx.font = '16px monospace';
         ctx.fillStyle = '#aaaaff';
-        ctx.fillText('MVP: EU (31/20/9)  |  FIGAS: 21/25/3', 100, 285);
+        ctx.fillText('MVP: EU (31/20/9)  |  FIGAS: 27/20/4', 100, 285);
         
         // partida 2
         ctx.font = 'bold 20px monospace';
@@ -594,7 +575,7 @@
         ctx.fillText('7', 580, 240);
         ctx.font = '16px monospace';
         ctx.fillStyle = '#aaaaff';
-        ctx.fillText('MVP: EU (34/22/7) | FIGAS: 24/27/6', 480, 285);
+        ctx.fillText('MVP: EU (34/22/7) | FIGAS: 27/20/4', 480, 285);
         
         ctx.font = 'italic 16px sans-serif';
         ctx.fillStyle = '#ffa56e';
