@@ -366,6 +366,7 @@
             margin-top: 1rem;
             font-size: 1rem;
             color: #ffaa66;
+            font-weight: bold;
         }
 
         .footer-ironia {
@@ -408,10 +409,22 @@
             padding: 0.2rem 1rem;
             border-radius: 20px;
             margin-top: 0.5rem;
+            font-weight: bold;
         }
 
         .foto-certa {
             border: 3px solid #ffaa33;
+        }
+
+        .ficou-sabor {
+            font-size: 1.1rem;
+            background: #8b3a2a;
+            display: inline-block;
+            padding: 0.3rem 1.2rem;
+            border-radius: 30px;
+            margin-top: 0.8rem;
+            font-weight: 800;
+            letter-spacing: 1px;
         }
     </style>
 </head>
@@ -452,7 +465,7 @@
                 <div class="partida-status"><span class="derrota-status">❌ DERROTA PATÉTICA ❌</span></div>
                 <div>🏅 MVP DA PARTIDA? <strong style="color:#ff8866">SÓ TEVE O SABOR MVP</strong></div>
                 <div class="mvp" style="background:#211a1a;"><span>🤡 "SABOR MVP" 🤡</span> — não serviu nem pra perder bonito</div>
-                <div class="nao-serviu">🍽️ SÓ O GOSTINHO DO MVP, NADA MAIS 🍽️</div>
+                <div class="ficou-sabor">🍽️ FICOU NO SABOR MVP 🍽️</div>
             </div>
             <div style="font-size:0.8rem; text-align:center; color:#b99">Placar combinado: 12x7 no agregado das duas últimas seguidas</div>
         </div>
@@ -503,7 +516,7 @@
             <span>🏆 Meu rating: +21 de MVP</span>
         </div>
         <div class="sabor-mvp">
-            ⭐ FIGAS só teve o SABOR MVP — não serviu nem pra perder bonito ⭐
+            ⭐ FIGAS FICOU NO SABOR MVP — não serviu nem pra perder bonito ⭐
         </div>
         <p style="margin-top: 16px; font-size: 1.1rem;"><strong>FIGAS, pode até ter sentido o gostinho do MVP em algum momento, mas na hora do vamos ver, quem carregou fui EU. 12x7 na sua cara, duas vezes seguidas. Aposta liquidada, humilhação registrada pra eternidade.</strong></p>
         <div style="margin-top: 1rem;">👑 Assinado: O MVP que te destruiu 👑</div>
@@ -513,7 +526,7 @@
     <div style="background: #01020be0; border-radius: 2rem; padding: 1.2rem; margin: 1rem 0; border-left: 8px solid #ff4d2e;">
         <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem;">
             <div><strong>📊 MEU DESEMPENHO (últimos confrontos)</strong><br>⭐ Pontuação: 9.297<br>⭐ K/D/A: 31/26/5 (MVP +21 rating)<br>⭐ Resultado: VITÓRIA + EMPATE? NÃO, SÓ VITÓRIA NA SÉRIE!</div>
-            <div><strong>📉 DESEMPENHO DO FIGAS (risos)</strong><br>💩 Pontuação: 7.892<br>💩 K/D/A: 27/20/4<br>💩 Resultado: Derrota e choro garantido<br>💩 SABOR MVP: só na imaginação</div>
+            <div><strong>📉 DESEMPENHO DO FIGAS (risos)</strong><br>💩 Pontuação: 7.892<br>💩 K/D/A: 27/20/4<br>💩 Resultado: Derrota e choro garantido<br>💩 FICOU NO SABOR MVP — não serviu nem pra perder bonito</div>
         </div>
         <div style="margin-top: 12px; font-size:0.8rem; text-align:center;">🏆 placar final das apostas: 12x7 pra MIM — FIGAS pagará a aposta com doce + humilhação eterna.</div>
     </div>
@@ -521,9 +534,9 @@
     <!-- FOOTER com tom de desafio -->
     <div class="footer-ironia">
         <p>⭐ Site produzido para registrar a MAIOR GOLEADA DA HISTÓRIA DO VALORANT (entre amigos) ⭐<br>
-        Eu (O rei, O MVP) x FIGAS (meu criado, que só teve o SABOR MVP) — Duas partidas seguidas com o mesmo placar 12-7, prova de que ele não consegue nem um round de consolo.<br>
+        Eu (O rei, O MVP) x FIGAS (meu criado, que FICOU NO SABOR MVP) — Duas partidas seguidas com o mesmo placar 12-7, prova de que ele não consegue nem um round de consolo.<br>
         🎯 APOSTA VENCIDA COM SOBRA. FIGAS não serviu nem pra perder bonito. 🎯</p>
-        <p style="margin-top: 1rem;">👉 <strong>#12a7 #FIGASruim #EuSouOMVP #SaborMVP #NaoServiuNemPraPerderBonito</strong> 👈</p>
+        <p style="margin-top: 1rem;">👉 <strong>#12a7 #FIGASruim #EuSouOMVP #FicouNoSaborMVP #NaoServiuNemPraPerderBonito</strong> 👈</p>
         <p>Deploy no GitHub: página eterna da derrota do FIGAS</p>
     </div>
 </div>
@@ -583,7 +596,7 @@
         ctx.fillText('APOSTA VENCIDA: EU DOMINEI AS DUAS PARTIDAS SEGUIDAS — 12-7, 12-7', 150, 360);
         ctx.font = 'bold 14px monospace';
         ctx.fillStyle = '#ffaa66';
-        ctx.fillText('🏆 FIGAS SÓ TEVE O SABOR MVP — NÃO SERVIU NEM PRA PERDER BONITO 🏆', 150, 410);
+        ctx.fillText('🏆 FIGAS FICOU NO SABOR MVP — NÃO SERVIU NEM PRA PERDER BONITO 🏆', 120, 410);
         
         const dataUrl = canvas.toDataURL('image/png');
         imgElement.src = dataUrl;
@@ -591,18 +604,16 @@
         imgElement.style.borderRadius = '1rem';
         
         // CORRIGINDO A FOTO DO FIGAS para a foto certa
-        // Colocando uma imagem mais adequada (ícone de derrota/humilhação)
         const fotoFigas = document.getElementById('fotoFigas');
         if(fotoFigas) {
-            // Usando uma imagem que represente a derrota do FIGAS (imagem de um jogderrotado)
-            // Colocando uma foto de um jogador triste/chateado para representar a humilhação
+            // Usando uma imagem que represente a derrota do FIGAS
             fotoFigas.src = "https://media.tenor.com/8gT6q7L5x3sAAAAC/sad-frog.gif";
             // Fallback caso o gif não carregue
             fotoFigas.onerror = function() {
-                this.src = "https://placehold.co/300x300/4a2a2a/ff8888?text=FIGAS+DERROTADO";
+                this.src = "https://placehold.co/300x300/4a2a2a/ff8888?text=FIGAS+FICOU+NO+SABOR+MVP";
             };
             fotoFigas.style.objectFit = "cover";
-            fotoFigas.setAttribute('title', 'FIGAS - só teve o sabor MVP, não serviu nem pra perder bonito');
+            fotoFigas.setAttribute('title', 'FIGAS - ficou no sabor MVP, não serviu nem pra perder bonito');
         }
     });
 </script>
